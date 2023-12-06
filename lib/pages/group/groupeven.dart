@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart ';
 import 'package:flutter_schedule/main.dart';
-import 'package:flutter_schedule/pages/groupeven1/even1.dart';
+import 'package:flutter_schedule/pages/groupeven/even1.dart';
 
 class group extends StatelessWidget {
   const group({super.key});
@@ -26,7 +26,7 @@ class group extends StatelessWidget {
                     builder: (context) => homelike(),
                   ));
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back,
               color: Colors.blue,
             )),
