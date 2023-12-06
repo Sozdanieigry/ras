@@ -49,16 +49,19 @@ class olde extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
-                onPressed: () {},
-                child: const Text(
-                  'Понедельник',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 14),
+              Flexible(
+                flex: 1,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                  onPressed: () {},
+                  child: const Text(
+                    'Понедельник',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w300,
+                        fontSize: 14),
+                  ),
                 ),
               ),
             ],
@@ -67,16 +70,19 @@ class olde extends StatelessWidget {
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
-              onPressed: () {},
-              child: const Text(
-                'Вторник',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w300,
-                    fontSize: 14),
+            Flexible(
+              flex: 1,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                onPressed: () {},
+                child: const Text(
+                  'Вторник',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w300,
+                      fontSize: 14),
+                ),
               ),
             ),
           ]),
@@ -84,16 +90,19 @@ class olde extends StatelessWidget {
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
-              onPressed: () {},
-              child: const Text(
-                'Среда',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w300,
-                    fontSize: 14),
+            Flexible(
+              flex: 1,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                onPressed: () {},
+                child: const Text(
+                  'Среда',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w300,
+                      fontSize: 14),
+                ),
               ),
             ),
           ]),
@@ -101,16 +110,19 @@ class olde extends StatelessWidget {
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
-              onPressed: () {},
-              child: const Text(
-                'Четверг',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w300,
-                    fontSize: 14),
+            Flexible(
+              flex: 1,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                onPressed: () {},
+                child: const Text(
+                  'Четверг',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w300,
+                      fontSize: 14),
+                ),
               ),
             ),
           ]),
@@ -118,16 +130,19 @@ class olde extends StatelessWidget {
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
-              onPressed: () {},
-              child: const Text(
-                'Пятница',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w300,
-                    fontSize: 14),
+            Flexible(
+              flex: 1,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                onPressed: () {},
+                child: const Text(
+                  'Пятница',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w300,
+                      fontSize: 14),
+                ),
               ),
             ),
           ]),

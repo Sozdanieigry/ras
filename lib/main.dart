@@ -1,6 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_schedule/pages/even.dart';
-import 'package:flutter_schedule/pages/olde.dart';
+import 'package:flutter_schedule/pages/group/groupeven.dart';
+import 'package:flutter_schedule/pages/group/groupold.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -51,22 +52,25 @@ class homelike extends StatelessWidget {
               const SizedBox(
                 height: 400,
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 50)),
-                onPressed: () {
-                  Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => even(),
-                      ));
-                },
-                child: const Text(
-                  'Четная неделя',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 14),
+              Flexible(
+                flex: 1,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue, fixedSize: Size(150, 50)),
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => group(),
+                        ));
+                  },
+                  child: const Text(
+                    'Четная неделя',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w300,
+                        fontSize: 14),
+                  ),
                 ),
               ),
               const SizedBox(
@@ -75,22 +79,25 @@ class homelike extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(200, 50)),
-                onPressed: () {
-                  Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => olde(),
-                      ));
-                },
-                child: const Text(
-                  'Нечетная неделя',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 14),
+              Flexible(
+                flex: 1,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue, fixedSize: Size(150, 50)),
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                        context,
+                        CupertinoPageRoute(
+                          builder: (context) => groupo(),
+                        ));
+                  },
+                  child: const Text(
+                    'Нечетная неделя',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w300,
+                        fontSize: 14),
+                  ),
                 ),
               ),
             ],

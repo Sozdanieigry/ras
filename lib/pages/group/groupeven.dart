@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart ';
 import 'package:flutter_schedule/main.dart';
+import 'package:flutter_schedule/pages/groupeven1/even1.dart';
 
-class even extends StatelessWidget {
-  const even({super.key});
+class group extends StatelessWidget {
+  const group({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class even extends StatelessWidget {
       backgroundColor: Color.fromARGB(255, 234, 230, 230),
       appBar: AppBar(
         title: const Text(
-          'День недели',
+          'Группа',
           style:
               TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.w200),
         ),
@@ -44,7 +45,7 @@ class even extends StatelessWidget {
       body: Column(
         children: [
           const SizedBox(
-            height: 100,
+            height: 130,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -53,20 +54,20 @@ class even extends StatelessWidget {
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                      backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => even(),
-                        ));
+                    Navigator.pushReplacement(context, MaterialPageRoute(
+                      builder: (context) {
+                        return even1();
+                      },
+                    ));
                   },
                   child: const Text(
-                    'Понедельник',
+                    '1 Курс',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
-                        fontSize: 14),
+                        fontSize: 16),
                   ),
                 ),
               ),
@@ -80,20 +81,14 @@ class even extends StatelessWidget {
               flex: 1,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => even(),
-                      ));
-                },
+                    backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
+                onPressed: () {},
                 child: const Text(
-                  'Вторник',
+                  '2 Курс',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w300,
-                      fontSize: 14),
+                      fontSize: 16),
                 ),
               ),
             ),
@@ -106,20 +101,14 @@ class even extends StatelessWidget {
               flex: 1,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => even(),
-                      ));
-                },
+                    backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
+                onPressed: () {},
                 child: const Text(
-                  'Среда',
+                  '3 Курс',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w300,
-                      fontSize: 14),
+                      fontSize: 16),
                 ),
               ),
             ),
@@ -132,20 +121,14 @@ class even extends StatelessWidget {
               flex: 1,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => even(),
-                      ));
-                },
+                    backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
+                onPressed: () {},
                 child: const Text(
-                  'Четверг',
+                  '4 Курс',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w300,
-                      fontSize: 14),
+                      fontSize: 16),
                 ),
               ),
             ),
@@ -153,29 +136,6 @@ class even extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Flexible(
-              flex: 1,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => even(),
-                      ));
-                },
-                child: const Text(
-                  'Пятница',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 14),
-                ),
-              ),
-            ),
-          ]),
         ],
       ),
     );
