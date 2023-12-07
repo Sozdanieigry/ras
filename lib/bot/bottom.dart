@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_schedule/main.dart';
 import 'package:flutter_schedule/register/sign.dart';
 
 class bot extends StatelessWidget {
@@ -18,13 +17,13 @@ class bot extends StatelessWidget {
             icon: const Icon(Icons.assignment),
           ),
           IconButton(
-              onPressed: () {}, icon: Icon(Icons.calendar_month_rounded)),
+              onPressed: () {}, icon: const Icon(Icons.calendar_month_rounded)),
           IconButton(
               onPressed: () {
                 Navigator.pushReplacement(
                     context,
                     CupertinoPageRoute(
-                      builder: (context) => person(),
+                      builder: (context) => const person(),
                     ));
               },
               icon: const Icon(

@@ -9,7 +9,7 @@ class group extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 234, 230, 230),
+      backgroundColor: const Color.fromARGB(255, 234, 230, 230),
       appBar: AppBar(
         title: const Text(
           'Группа',
@@ -23,7 +23,7 @@ class group extends StatelessWidget {
               Navigator.pushReplacement(
                   context,
                   CupertinoPageRoute(
-                    builder: (context) => homelike(),
+                    builder: (context) => const homelike(),
                   ));
             },
             icon: const Icon(
@@ -33,13 +33,7 @@ class group extends StatelessWidget {
         actions: [
           Image.network(
               'https://avatars.mds.yandex.net/i?id=202ceb62571851c187a67154adcbe5875480d2f6-7662747-images-thumbs&n=13'),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.format_list_bulleted,
-              color: Colors.blue,
-            ),
-          ),
+         
         ],
       ),
       body: Center(
@@ -53,11 +47,11 @@ class group extends StatelessWidget {
                   flex: 1,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
+                        backgroundColor: Colors.blue, fixedSize: const Size(170, 55)),
                     onPressed: () {
                       Navigator.pushReplacement(context, MaterialPageRoute(
                         builder: (context) {
-                          return even1();
+                          return const even1();
                         },
                       ));
                     },
@@ -72,7 +66,7 @@ class group extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -80,7 +74,7 @@ class group extends StatelessWidget {
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
+                      backgroundColor: Colors.blue, fixedSize: const Size(170, 55)),
                   onPressed: () {},
                   child: const Text(
                     '2 Курс',
@@ -92,7 +86,7 @@ class group extends StatelessWidget {
                 ),
               ),
             ]),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -100,7 +94,7 @@ class group extends StatelessWidget {
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
+                      backgroundColor: Colors.blue, fixedSize: const Size(170, 55)),
                   onPressed: () {},
                   child: const Text(
                     '3 Курс',
@@ -112,7 +106,7 @@ class group extends StatelessWidget {
                 ),
               ),
             ]),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -120,7 +114,7 @@ class group extends StatelessWidget {
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
+                      backgroundColor: Colors.blue, fixedSize: const Size(170, 55)),
                   onPressed: () {},
                   child: const Text(
                     '4 Курс',
@@ -132,7 +126,7 @@ class group extends StatelessWidget {
                 ),
               ),
             ]),
-            SizedBox(
+            const SizedBox(
               height: 70,
             )
           ],

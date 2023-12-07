@@ -8,7 +8,7 @@ class even extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 234, 230, 230),
+      backgroundColor: const Color.fromARGB(255, 234, 230, 230),
       appBar: AppBar(
         title: const Text(
           'День недели',
@@ -22,10 +22,10 @@ class even extends StatelessWidget {
               Navigator.pushReplacement(
                   context,
                   CupertinoPageRoute(
-                    builder: (context) => homelike(),
+                    builder: (context) => const homelike(),
                   ));
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back,
               color: Colors.blue,
             )),
@@ -53,12 +53,12 @@ class even extends StatelessWidget {
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                      backgroundColor: Colors.blue, fixedSize: const Size(150, 40)),
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => even(),
+                          builder: (context) => const even(),
                         ));
                   },
                   child: const Text(
@@ -72,7 +72,7 @@ class even extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -80,12 +80,12 @@ class even extends StatelessWidget {
               flex: 1,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                    backgroundColor: Colors.blue, fixedSize: const Size(150, 40)),
                 onPressed: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => even(),
+                        builder: (context) => const even(),
                       ));
                 },
                 child: const Text(
@@ -98,7 +98,7 @@ class even extends StatelessWidget {
               ),
             ),
           ]),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -106,12 +106,12 @@ class even extends StatelessWidget {
               flex: 1,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                    backgroundColor: Colors.blue, fixedSize: const Size(150, 40)),
                 onPressed: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => even(),
+                        builder: (context) => const even(),
                       ));
                 },
                 child: const Text(
@@ -124,7 +124,7 @@ class even extends StatelessWidget {
               ),
             ),
           ]),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -132,12 +132,12 @@ class even extends StatelessWidget {
               flex: 1,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                    backgroundColor: Colors.blue, fixedSize: const Size(150, 40)),
                 onPressed: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => even(),
+                        builder: (context) => const even(),
                       ));
                 },
                 child: const Text(
@@ -150,7 +150,7 @@ class even extends StatelessWidget {
               ),
             ),
           ]),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -158,12 +158,12 @@ class even extends StatelessWidget {
               flex: 1,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                    backgroundColor: Colors.blue, fixedSize: const Size(150, 40)),
                 onPressed: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => even(),
+                        builder: (context) => const even(),
                       ));
                 },
                 child: const Text(

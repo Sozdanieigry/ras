@@ -8,7 +8,7 @@ class person extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 234, 230, 230),
+      backgroundColor: const Color.fromARGB(255, 234, 230, 230),
       appBar: AppBar(
         title: const Text(
           'Профиль',
@@ -22,26 +22,43 @@ class person extends StatelessWidget {
               'https://avatars.mds.yandex.net/i?id=202ceb62571851c187a67154adcbe5875480d2f6-7662747-images-thumbs&n=13'),
         ],
       ),
-      body: Column(),
+      body: Column(
+        children: [ const
+          SizedBox(
+            height: 10,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Image.network(
+                  'https://kartinkof.club/uploads/posts/2023-05/1683641438_kartinkof-club-p-pustoi-chelovek-kartinki-3.png',
+                  width: 300,
+                  height: 200,
+                ),
+              )
+            ],
+          ),
+        ],
+      ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
-              onPressed: () {
-               
-              },
+              onPressed: () {},
               icon: const Icon(Icons.assignment),
             ),
             IconButton(
                 onPressed: () {
-                   Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => homelike(),
-                    ));
-                }, icon: Icon(Icons.calendar_month_rounded)),
+                  Navigator.pushReplacement(
+                      context,
+                      CupertinoPageRoute(
+                        builder: (context) => const homelike(),
+                      ));
+                },
+                icon: const Icon(Icons.calendar_month_rounded)),
             IconButton(
                 onPressed: () {},
                 icon: const Icon(

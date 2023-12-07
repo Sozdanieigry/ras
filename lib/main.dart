@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_schedule/bot/bottom.dart';
 import 'package:flutter_schedule/pages/group/groupeven.dart';
 import 'package:flutter_schedule/pages/group/groupold.dart';
-import 'package:flutter_schedule/bot/bottom.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -18,7 +17,7 @@ class homelike extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 234, 230, 230),
+      backgroundColor: const Color.fromARGB(255, 234, 230, 230),
       appBar: AppBar(
         title: const Text(
           'Расписание',
@@ -37,13 +36,6 @@ class homelike extends StatelessWidget {
         actions: [
           Image.network(
               'https://avatars.mds.yandex.net/i?id=202ceb62571851c187a67154adcbe5875480d2f6-7662747-images-thumbs&n=13'),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.format_list_bulleted,
-              color: Colors.blue,
-            ),
-          ),
         ],
       ),
       body: Column(
@@ -58,12 +50,13 @@ class homelike extends StatelessWidget {
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, fixedSize: Size(170, 50)),
+                      backgroundColor: Colors.blue,
+                      fixedSize: const Size(170, 50)),
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => group(),
+                          builder: (context) => const group(),
                         ));
                   },
                   child: const Text(
@@ -85,12 +78,13 @@ class homelike extends StatelessWidget {
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, fixedSize: Size(170, 50)),
+                      backgroundColor: Colors.blue,
+                      fixedSize: const Size(170, 50)),
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => groupol(),
+                          builder: (context) => const groupol(),
                         ));
                   },
                   child: const Text(
@@ -106,7 +100,7 @@ class homelike extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: bot(),
+      bottomNavigationBar: const bot(),
     );
   }
 }

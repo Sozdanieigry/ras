@@ -22,7 +22,7 @@ class olde extends StatelessWidget {
               Navigator.pushReplacement(
                   context,
                   CupertinoPageRoute(
-                    builder: (context) => homelike(),
+                    builder: (context) => const homelike(),
                   ));
             },
             icon: const Icon(

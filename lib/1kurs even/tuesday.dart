@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_schedule/pages/groupeven/even1.dart';
 
-class mon extends StatelessWidget {
-  const mon({super.key});
+class tue extends StatelessWidget {
+  const tue({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class mon extends StatelessWidget {
       backgroundColor: Colors.blue,
       appBar: AppBar(
         title: const Text(
-          'Понедельник',
+          'Вторник',
           style:
               TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.w200),
         ),
@@ -65,7 +65,7 @@ class mon extends StatelessWidget {
                                   height: 30,
                                 ),
                                 Text(
-                                  '9:10',
+                                  '9:55',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 24,
@@ -74,7 +74,7 @@ class mon extends StatelessWidget {
                                 SizedBox(
                                   width: 30,
                                 ),
-                                Text('Предмет: Пусто'),
+                                Text('Предмет: Физика'),
                               ],
                             ),
                           ),
@@ -91,13 +91,13 @@ class mon extends StatelessWidget {
                               SizedBox(
                                 width: 20,
                               ),
-                              Text('Кабинет: Пусто'),
+                              Text('Кабинет: 2110'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель: Пусто')],
+                              children: [Text('Преподаватель: Курилов А.Д.')],
                             ),
                           )
                         ],
@@ -142,7 +142,7 @@ class mon extends StatelessWidget {
                                 SizedBox(
                                   width: 20,
                                 ),
-                                Text('Предмет: Пусто'),
+                                Text('Предмет: Физика'),
                               ],
                             ),
                           ),
@@ -159,13 +159,13 @@ class mon extends StatelessWidget {
                               SizedBox(
                                 width: 23,
                               ),
-                              Text('Кабинет: Пусто'),
+                              Text('Кабинет: 2110'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель: Пусто')],
+                              children: [Text('Преподаватель: Курилов А.Д.')],
                             ),
                           )
                         ],
@@ -210,7 +210,7 @@ class mon extends StatelessWidget {
                                 SizedBox(
                                   width: 20,
                                 ),
-                                Text('Предмет: Пусто'),
+                                Text('Предмет: Биология'),
                               ],
                             ),
                           ),
@@ -227,13 +227,13 @@ class mon extends StatelessWidget {
                               SizedBox(
                                 width: 23,
                               ),
-                              Text('Кабинет: Пусто'),
+                              Text('Кабинет: 1714'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель: Пусто')],
+                              children: [Text('Преподаватель: Юртаев В.И.')],
                             ),
                           )
                         ],
@@ -278,7 +278,7 @@ class mon extends StatelessWidget {
                                 SizedBox(
                                   width: 20,
                                 ),
-                                Text('Предмет: Физическая культура'),
+                                Text('Предмет: История'),
                               ],
                             ),
                           ),
@@ -295,13 +295,13 @@ class mon extends StatelessWidget {
                               SizedBox(
                                 width: 23,
                               ),
-                              Text('Кабинет: спорт.зал'),
+                              Text('Кабинет: 1210'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель: Фомичева И.В.')],
+                              children: [Text('Преподаватель: Антропова Т.В.')],
                             ),
                           )
                         ],
@@ -346,7 +346,7 @@ class mon extends StatelessWidget {
                                 SizedBox(
                                   width: 20,
                                 ),
-                                Text('Предмет: География'),
+                                Text('Предмет: Пусто'),
                               ],
                             ),
                           ),
@@ -363,13 +363,13 @@ class mon extends StatelessWidget {
                               SizedBox(
                                 width: 23,
                               ),
-                              Text('Кабинет: 1205'),
+                              Text('Кабинет: Пусто'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель: Цинцадзе М.З.')],
+                              children: [Text('Преподаватель: Пусто')],
                             ),
                           )
                         ],
@@ -414,7 +414,7 @@ class mon extends StatelessWidget {
                                 SizedBox(
                                   width: 30,
                                 ),
-                                Text('Предмет: География'),
+                                Text('Предмет: Пусто'),
                               ],
                             ),
                           ),
@@ -431,13 +431,13 @@ class mon extends StatelessWidget {
                               SizedBox(
                                 width: 23,
                               ),
-                              Text('Кабинет: 1205'),
+                              Text('Кабинет: Пусто'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель: Цинцадзе М.З.')],
+                              children: [Text('Преподаватель: Пусто')],
                             ),
                           )
                         ],
