@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_schedule/bot/bottom.dart';
 import 'package:flutter_schedule/pages/group/groupeven.dart';
 import 'package:flutter_schedule/pages/group/groupold.dart';
+import 'package:flutter_schedule/bot/bottom.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -104,6 +106,7 @@ class homelike extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: bot(),
     );
   }
 }

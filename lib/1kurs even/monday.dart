@@ -62,7 +62,7 @@ class mon extends StatelessWidget {
                           TextButton(
                               onPressed: null, child: Text('Первая пара')),
                           SizedBox(
-                            height: 35,
+                            height: 20,
                           ),
                           Padding(
                             padding: EdgeInsets.only(left: 10),
@@ -75,13 +75,13 @@ class mon extends StatelessWidget {
                                   '9:10',
                                   style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontSize: 24,
                                       fontWeight: FontWeight.w300),
                                 ),
                                 SizedBox(
-                                  width: 20,
+                                  width: 30,
                                 ),
-                                Text('Предмет:'),
+                                Text('Предмет: Пусто'),
                               ],
                             ),
                           ),
@@ -90,7 +90,7 @@ class mon extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.all(8.0),
                                 child: Text(
-                                  '9:55',
+                                  '10:40',
                                   style: TextStyle(
                                       color: Colors.black54, fontSize: 20),
                                 ),
@@ -98,23 +98,22 @@ class mon extends StatelessWidget {
                               SizedBox(
                                 width: 20,
                               ),
-                              Text('Кабинет:'),
+                              Text('Кабинет: Пусто'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель:')],
+                              children: [Text('Преподаватель: Пусто')],
                             ),
                           )
                         ],
                       ),
                     ),
                   ),
-                 
                 ],
               ),
-               Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Flexible(
@@ -129,9 +128,9 @@ class mon extends StatelessWidget {
                       child: const Column(
                         children: [
                           TextButton(
-                              onPressed: null, child: Text('Первая пара')),
+                              onPressed: null, child: Text('Вторая пара')),
                           SizedBox(
-                            height: 35,
+                            height: 20,
                           ),
                           Padding(
                             padding: EdgeInsets.only(left: 10),
@@ -141,16 +140,16 @@ class mon extends StatelessWidget {
                                   height: 30,
                                 ),
                                 Text(
-                                  '9:10',
+                                  '10:50',
                                   style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontSize: 24,
                                       fontWeight: FontWeight.w300),
                                 ),
                                 SizedBox(
                                   width: 20,
                                 ),
-                                Text('Предмет:'),
+                                Text('Предмет: Пусто'),
                               ],
                             ),
                           ),
@@ -159,31 +158,30 @@ class mon extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.all(8.0),
                                 child: Text(
-                                  '9:55',
+                                  '12:20',
                                   style: TextStyle(
                                       color: Colors.black54, fontSize: 20),
                                 ),
                               ),
                               SizedBox(
-                                width: 20,
+                                width: 23,
                               ),
-                              Text('Кабинет:'),
+                              Text('Кабинет: Пусто'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель:')],
+                              children: [Text('Преподаватель: Пусто')],
                             ),
                           )
                         ],
                       ),
                     ),
                   ),
-                 
                 ],
               ),
-               Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Flexible(
@@ -198,9 +196,9 @@ class mon extends StatelessWidget {
                       child: const Column(
                         children: [
                           TextButton(
-                              onPressed: null, child: Text('Первая пара')),
+                              onPressed: null, child: Text('Третья пара')),
                           SizedBox(
-                            height: 35,
+                            height: 20,
                           ),
                           Padding(
                             padding: EdgeInsets.only(left: 10),
@@ -210,16 +208,16 @@ class mon extends StatelessWidget {
                                   height: 30,
                                 ),
                                 Text(
-                                  '9:10',
+                                  '12:50',
                                   style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontSize: 24,
                                       fontWeight: FontWeight.w300),
                                 ),
                                 SizedBox(
                                   width: 20,
                                 ),
-                                Text('Предмет:'),
+                                Text('Предмет: Биология'),
                               ],
                             ),
                           ),
@@ -228,31 +226,30 @@ class mon extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.all(8.0),
                                 child: Text(
-                                  '9:55',
+                                  '14:20',
                                   style: TextStyle(
                                       color: Colors.black54, fontSize: 20),
                                 ),
                               ),
                               SizedBox(
-                                width: 20,
+                                width: 23,
                               ),
-                              Text('Кабинет:'),
+                              Text('Кабинет: 1210'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель:')],
+                              children: [Text('Преподаватель: Юртаев В.И.')],
                             ),
                           )
                         ],
                       ),
                     ),
                   ),
-                 
                 ],
               ),
-               Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Flexible(
@@ -267,9 +264,9 @@ class mon extends StatelessWidget {
                       child: const Column(
                         children: [
                           TextButton(
-                              onPressed: null, child: Text('Первая пара')),
+                              onPressed: null, child: Text('Четвертая пара')),
                           SizedBox(
-                            height: 35,
+                            height: 20,
                           ),
                           Padding(
                             padding: EdgeInsets.only(left: 10),
@@ -279,16 +276,16 @@ class mon extends StatelessWidget {
                                   height: 30,
                                 ),
                                 Text(
-                                  '9:10',
+                                  '14:30',
                                   style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontSize: 24,
                                       fontWeight: FontWeight.w300),
                                 ),
                                 SizedBox(
                                   width: 20,
                                 ),
-                                Text('Предмет:'),
+                                Text('Предмет: Физическая культура'),
                               ],
                             ),
                           ),
@@ -297,31 +294,30 @@ class mon extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.all(8.0),
                                 child: Text(
-                                  '9:55',
+                                  '16:00',
                                   style: TextStyle(
                                       color: Colors.black54, fontSize: 20),
                                 ),
                               ),
                               SizedBox(
-                                width: 20,
+                                width: 23,
                               ),
-                              Text('Кабинет:'),
+                              Text('Кабинет: спорт.зал'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель:')],
+                              children: [Text('Преподаватель: Фомичева И.В.')],
                             ),
                           )
                         ],
                       ),
                     ),
                   ),
-                 
                 ],
               ),
-               Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Flexible(
@@ -336,9 +332,9 @@ class mon extends StatelessWidget {
                       child: const Column(
                         children: [
                           TextButton(
-                              onPressed: null, child: Text('Первая пара')),
+                              onPressed: null, child: Text('Пятая пара')),
                           SizedBox(
-                            height: 35,
+                            height: 20,
                           ),
                           Padding(
                             padding: EdgeInsets.only(left: 10),
@@ -348,16 +344,16 @@ class mon extends StatelessWidget {
                                   height: 30,
                                 ),
                                 Text(
-                                  '9:10',
+                                  '16:10',
                                   style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontSize: 24,
                                       fontWeight: FontWeight.w300),
                                 ),
                                 SizedBox(
                                   width: 20,
                                 ),
-                                Text('Предмет:'),
+                                Text('Предмет: Обществознание'),
                               ],
                             ),
                           ),
@@ -366,31 +362,30 @@ class mon extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.all(8.0),
                                 child: Text(
-                                  '9:55',
+                                  '17:40',
                                   style: TextStyle(
                                       color: Colors.black54, fontSize: 20),
                                 ),
                               ),
                               SizedBox(
-                                width: 20,
+                                width: 23,
                               ),
-                              Text('Кабинет:'),
+                              Text('Кабинет: 1205'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель:')],
+                              children: [Text('Преподаватель: Овечкина А.К.')],
                             ),
                           )
                         ],
                       ),
                     ),
                   ),
-                 
                 ],
               ),
-               Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Flexible(
@@ -405,9 +400,9 @@ class mon extends StatelessWidget {
                       child: const Column(
                         children: [
                           TextButton(
-                              onPressed: null, child: Text('Первая пара')),
+                              onPressed: null, child: Text('Шестая пара')),
                           SizedBox(
-                            height: 35,
+                            height: 20,
                           ),
                           Padding(
                             padding: EdgeInsets.only(left: 10),
@@ -417,16 +412,16 @@ class mon extends StatelessWidget {
                                   height: 30,
                                 ),
                                 Text(
-                                  '9:10',
+                                  '17:50',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 20,
                                       fontWeight: FontWeight.w300),
                                 ),
                                 SizedBox(
-                                  width: 20,
+                                  width: 30,
                                 ),
-                                Text('Предмет:'),
+                                Text('Предмет: Обществознание'),
                               ],
                             ),
                           ),
@@ -435,28 +430,27 @@ class mon extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.all(8.0),
                                 child: Text(
-                                  '9:55',
+                                  '18:35',
                                   style: TextStyle(
                                       color: Colors.black54, fontSize: 20),
                                 ),
                               ),
                               SizedBox(
-                                width: 20,
+                                width: 23,
                               ),
-                              Text('Кабинет:'),
+                              Text('Кабинет: 1205'),
                             ],
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Row(
-                              children: [Text('Преподаватель:')],
+                              children: [Text('Преподаватель: Овечкина А.К.')],
                             ),
                           )
                         ],
                       ),
                     ),
                   ),
-                 
                 ],
               ),
             ],
