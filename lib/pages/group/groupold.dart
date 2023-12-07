@@ -11,7 +11,7 @@ class groupol extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 234, 230, 230),
       appBar: AppBar(
         title: const Text(
-          'Группа',
+          'Курс',
           style:
               TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.w200),
         ),

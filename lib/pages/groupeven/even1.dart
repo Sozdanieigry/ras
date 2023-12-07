@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_schedule/1kurs%20even/friday.dart';
 import 'package:flutter_schedule/1kurs%20even/monday.dart';
+import 'package:flutter_schedule/1kurs%20even/sarurday.dart';
+import 'package:flutter_schedule/1kurs%20even/thursday.dart';
 import 'package:flutter_schedule/1kurs%20even/tuesday.dart';
 import 'package:flutter_schedule/1kurs%20even/wednesday.dart';
 
 import 'package:flutter_schedule/pages/group/groupeven.dart';
+import 'package:flutter_schedule/univergr/aregroup/group.dart';
 
 class even1 extends StatelessWidget {
   const even1({super.key});
@@ -27,7 +31,7 @@ class even1 extends StatelessWidget {
               Navigator.pushReplacement(
                   context,
                   CupertinoPageRoute(
-                    builder: (context) => const group(),
+                    builder: (context) => const groupare(),
                   ));
             },
             icon: const Icon(
@@ -80,7 +84,7 @@ class even1 extends StatelessWidget {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => tue(),
+                              builder: (context) => const tue(),
                             ));
                       },
                       child: const Text(
@@ -107,7 +111,7 @@ class even1 extends StatelessWidget {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => wen(),
+                              builder: (context) => const wen(),
                             ));
                       },
                       child: const Text(
@@ -125,7 +129,13 @@ class even1 extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                         fixedSize: const Size(180, 65),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => th(),
+                            ));
+                      },
                       child: const Text(
                         'Четверг',
                         style: TextStyle(
@@ -146,7 +156,13 @@ class even1 extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                         fixedSize: const Size(180, 65),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => fri(),
+                            ));
+                      },
                       child: const Text(
                         'Пятница',
                         style: TextStyle(
@@ -162,7 +178,13 @@ class even1 extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                         fixedSize: const Size(180, 65),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => sat(),
+                            ));
+                      },
                       child: const Text(
                         'Суббота',
                         style: TextStyle(

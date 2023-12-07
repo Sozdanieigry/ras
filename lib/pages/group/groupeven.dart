@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart ';
 import 'package:flutter_schedule/main.dart';
 import 'package:flutter_schedule/pages/groupeven/even1.dart';
+import 'package:flutter_schedule/univergr/aregroup/group.dart';
 
 class group extends StatelessWidget {
   const group({super.key});
@@ -12,7 +13,7 @@ class group extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 234, 230, 230),
       appBar: AppBar(
         title: const Text(
-          'Группа',
+          'Курс',
           style:
               TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.w200),
         ),
@@ -51,7 +52,7 @@ class group extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushReplacement(context, MaterialPageRoute(
                         builder: (context) {
-                          return const even1();
+                          return const groupare();
                         },
                       ));
                     },
