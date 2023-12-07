@@ -5,15 +5,13 @@ import 'package:flutter_schedule/1kurs%20even/monday.dart';
 
 import 'package:flutter_schedule/pages/group/groupeven.dart';
 
-
-
 class even1 extends StatelessWidget {
   const even1({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 234, 230, 230),
+      backgroundColor: const  Color.fromARGB(255, 234, 230, 230),
       appBar: AppBar(
         title: const Text(
           'День недели',
@@ -46,126 +44,146 @@ class even1 extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 100,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+      body: Center(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 170,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Flexible(
+                  flex: 1,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(180, 65),
+                      ),
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => mon(),
+                            ));
+                      },
+                      child: const Text(
+                        'Понедельник',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 18),
+                      )),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Flexible(
+                  flex: 1,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(180, 65),
+                      ),
+                      onPressed: () {},
+                      child: const Text(
+                        'Вторник',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 18),
+                      )),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Flexible(
+                  flex: 1,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(180, 65),
+                      ),
+                      onPressed: () {},
+                      child: const Text(
+                        'Среда',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 18),
+                      )),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Flexible(
+                  flex: 1,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(180, 65),
+                      ),
+                      onPressed: () {},
+                      child: const Text(
+                        'Четверг',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 18),
+                      )),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Flexible(
+                  flex: 1,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(180, 65),
+                      ),
+                      onPressed: () {},
+                      child: const Text(
+                        'Пятница',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 18),
+                      )),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Flexible(
+                  flex: 1,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(180, 65),
+                      ),
+                      onPressed: () {},
+                      child: const Text(
+                        'Суббота',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, fontSize: 18),
+                      )),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Flexible(
                 flex: 1,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      fixedSize: const Size(150, 65),
-                    ),
-                    onPressed: () {
-                      Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => mon(),
-                          ));
-                    },
-                    child: const Text(
-                      'Понедельник',
-                      style:
-                          TextStyle(fontWeight: FontWeight.w100, fontSize: 18),
-                    )),
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              Flexible(
-                flex: 1,
-                child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      fixedSize: const Size(150, 65),
+                      fixedSize: const Size(250, 65),
                     ),
                     onPressed: () {},
                     child: const Text(
-                      'Вторник',
+                      'Воскресенье',
                       style:
-                          TextStyle(fontWeight: FontWeight.w100, fontSize: 18),
+                          TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
                     )),
               ),
-            ],
-          ),
-          const SizedBox(
-            height: 30,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Flexible(
-                flex: 1,
-                child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      fixedSize: const Size(150, 65),
-                    ),
-                    onPressed: () {},
-                    child: const Text(
-                      'Среда',
-                      style:
-                          TextStyle(fontWeight: FontWeight.w100, fontSize: 18),
-                    )),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Flexible(
-                flex: 1,
-                child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      fixedSize: const Size(150, 65),
-                    ),
-                    onPressed: () {},
-                    child: const Text(
-                      'Четверг',
-                      style:
-                          TextStyle(fontWeight: FontWeight.w100, fontSize: 18),
-                    )),
-              ),
-            ],
-          ),
-          const SizedBox(
-            height: 30,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Flexible(
-                flex: 1,
-                child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      fixedSize: const Size(150, 65),
-                    ),
-                    onPressed: () {},
-                    child: const Text(
-                      'Пятница',
-                      style:
-                          TextStyle(fontWeight: FontWeight.w100, fontSize: 18),
-                    )),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              Flexible(
-                flex: 1,
-                child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      fixedSize: const Size(150, 65),
-                    ),
-                    onPressed: () {},
-                    child: const Text(
-                      'Четверг',
-                      style:
-                          TextStyle(fontWeight: FontWeight.w100, fontSize: 18),
-                    )),
-              ),
-            ],
-          ),
-        ],
+            ])
+          ],
+        ),
       ),
     );
   }

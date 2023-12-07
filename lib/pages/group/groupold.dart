@@ -2,13 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart ';
 import 'package:flutter_schedule/main.dart';
 
-class groupo extends StatelessWidget {
-  const groupo({super.key});
+class groupol extends StatelessWidget {
+  const groupol({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 234, 230, 230),
+      backgroundColor: const Color.fromARGB(255, 234, 230, 230),
       appBar: AppBar(
         title: const Text(
           'Группа',
@@ -25,7 +25,7 @@ class groupo extends StatelessWidget {
                     builder: (context) => homelike(),
                   ));
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back,
               color: Colors.blue,
             )),
@@ -41,95 +41,95 @@ class groupo extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 130,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Flexible(
+                  flex: 1,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue, fixedSize: const Size(170, 55)),
+                    onPressed: () {},
+                    child: const Text(
+                      '1 Курс',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w300,
+                          fontSize: 17),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Flexible(
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
+                      backgroundColor: Colors.blue, fixedSize: const Size(170, 55)),
                   onPressed: () {},
                   child: const Text(
-                    '1 Курс',
+                    '2 Курс',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
-                        fontSize: 16),
+                        fontSize: 17),
                   ),
                 ),
               ),
-            ],
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Flexible(
-              flex: 1,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
-                onPressed: () {},
-                child: const Text(
-                  '2 Курс',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 16),
+            ]),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Flexible(
+                flex: 1,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue, fixedSize: const Size(170, 55)),
+                  onPressed: () {},
+                  child: const Text(
+                    '3 Курс',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w300,
+                        fontSize: 17),
+                  ),
                 ),
               ),
+            ]),
+            const SizedBox(
+              height: 20,
             ),
-          ]),
-          SizedBox(
-            height: 10,
-          ),
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Flexible(
-              flex: 1,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
-                onPressed: () {},
-                child: const Text(
-                  '3 Курс',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 16),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Flexible(
+                flex: 1,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue, fixedSize: const Size(170, 55)),
+                  onPressed: () {},
+                  child: const Text(
+                    '4 Курс',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w300,
+                        fontSize: 17),
+                  ),
                 ),
               ),
-            ),
-          ]),
-          SizedBox(
-            height: 10,
-          ),
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Flexible(
-              flex: 1,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
-                onPressed: () {},
-                child: const Text(
-                  '4 Курс',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 16),
-                ),
-              ),
-            ),
-          ]),
-          SizedBox(
-            height: 10,
-          ),
-        ],
+            ]),
+            const SizedBox(
+              height: 70,
+            )
+          ],
+        ),
       ),
     );
   }

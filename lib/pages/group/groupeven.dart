@@ -42,101 +42,101 @@ class group extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 130,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Flexible(
+                  flex: 1,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
+                    onPressed: () {
+                      Navigator.pushReplacement(context, MaterialPageRoute(
+                        builder: (context) {
+                          return even1();
+                        },
+                      ));
+                    },
+                    child: const Text(
+                      '1 Курс',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w300,
+                          fontSize: 17),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Flexible(
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
-                  onPressed: () {
-                    Navigator.pushReplacement(context, MaterialPageRoute(
-                      builder: (context) {
-                        return even1();
-                      },
-                    ));
-                  },
+                  onPressed: () {},
                   child: const Text(
-                    '1 Курс',
+                    '2 Курс',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
-                        fontSize: 16),
+                        fontSize: 17),
                   ),
                 ),
               ),
-            ],
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Flexible(
-              flex: 1,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
-                onPressed: () {},
-                child: const Text(
-                  '2 Курс',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 16),
+            ]),
+            SizedBox(
+              height: 20,
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Flexible(
+                flex: 1,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
+                  onPressed: () {},
+                  child: const Text(
+                    '3 Курс',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w300,
+                        fontSize: 17),
+                  ),
                 ),
               ),
+            ]),
+            SizedBox(
+              height: 20,
             ),
-          ]),
-          SizedBox(
-            height: 10,
-          ),
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Flexible(
-              flex: 1,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
-                onPressed: () {},
-                child: const Text(
-                  '3 Курс',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 16),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Flexible(
+                flex: 1,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
+                  onPressed: () {},
+                  child: const Text(
+                    '4 Курс',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w300,
+                        fontSize: 17),
+                  ),
                 ),
               ),
-            ),
-          ]),
-          SizedBox(
-            height: 10,
-          ),
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Flexible(
-              flex: 1,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(170, 55)),
-                onPressed: () {},
-                child: const Text(
-                  '4 Курс',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 16),
-                ),
-              ),
-            ),
-          ]),
-          SizedBox(
-            height: 10,
-          ),
-        ],
+            ]),
+            SizedBox(
+              height: 70,
+            )
+          ],
+        ),
       ),
     );
   }

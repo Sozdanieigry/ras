@@ -50,15 +50,15 @@ class homelike extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(
-                height: 400,
+                height: 600,
               ),
               Flexible(
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, fixedSize: Size(150, 50)),
+                      backgroundColor: Colors.blue, fixedSize: Size(170, 50)),
                   onPressed: () {
-                    Navigator.pushReplacement(
+                    Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => group(),
@@ -69,7 +69,7 @@ class homelike extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
-                        fontSize: 14),
+                        fontSize: 17),
                   ),
                 ),
               ),
@@ -83,12 +83,12 @@ class homelike extends StatelessWidget {
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, fixedSize: Size(150, 50)),
+                      backgroundColor: Colors.blue, fixedSize: Size(170, 50)),
                   onPressed: () {
-                    Navigator.pushReplacement(
+                    Navigator.push(
                         context,
-                        CupertinoPageRoute(
-                          builder: (context) => groupo(),
+                        MaterialPageRoute(
+                          builder: (context) => groupol(),
                         ));
                   },
                   child: const Text(
@@ -96,7 +96,7 @@ class homelike extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
-                        fontSize: 14),
+                        fontSize: 17),
                   ),
                 ),
               ),

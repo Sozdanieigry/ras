@@ -8,7 +8,7 @@ class olde extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 234, 230, 230),
+      backgroundColor: const Color.fromARGB(255, 234, 230, 230),
       appBar: AppBar(
         title: const Text(
           'День недели',
@@ -25,7 +25,7 @@ class olde extends StatelessWidget {
                     builder: (context) => homelike(),
                   ));
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back,
               color: Colors.blue,
             )),
@@ -53,7 +53,7 @@ class olde extends StatelessWidget {
                 flex: 1,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                      backgroundColor: Colors.blue, fixedSize: const Size(150, 40)),
                   onPressed: () {},
                   child: const Text(
                     'Понедельник',
@@ -66,7 +66,7 @@ class olde extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -74,7 +74,7 @@ class olde extends StatelessWidget {
               flex: 1,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                    backgroundColor: Colors.blue, fixedSize: const Size(150, 40)),
                 onPressed: () {},
                 child: const Text(
                   'Вторник',
@@ -86,7 +86,7 @@ class olde extends StatelessWidget {
               ),
             ),
           ]),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -94,7 +94,7 @@ class olde extends StatelessWidget {
               flex: 1,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                    backgroundColor: Colors.blue, fixedSize: const Size(150, 40)),
                 onPressed: () {},
                 child: const Text(
                   'Среда',
@@ -106,7 +106,7 @@ class olde extends StatelessWidget {
               ),
             ),
           ]),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -114,7 +114,7 @@ class olde extends StatelessWidget {
               flex: 1,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                    backgroundColor: Colors.blue, fixedSize: const Size(150, 40)),
                 onPressed: () {},
                 child: const Text(
                   'Четверг',
@@ -126,7 +126,7 @@ class olde extends StatelessWidget {
               ),
             ),
           ]),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -134,7 +134,7 @@ class olde extends StatelessWidget {
               flex: 1,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue, fixedSize: Size(150, 40)),
+                    backgroundColor: Colors.blue, fixedSize: const Size(150, 40)),
                 onPressed: () {},
                 child: const Text(
                   'Пятница',
