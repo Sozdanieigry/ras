@@ -23,21 +23,43 @@ class person extends StatelessWidget {
         ],
       ),
       body: Column(
-        children: [ const
+        children: [
+          const SizedBox(
+            height: 10,
+          ),
+          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Expanded(
+              child: Image.network(
+                'https://kartinkof.club/uploads/posts/2023-05/1683641438_kartinkof-club-p-pustoi-chelovek-kartinki-3.png',
+                width: 300,
+                height: 200,
+              ),
+            ),
+          ]),
           SizedBox(
             height: 10,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Expanded(
-                child: Image.network(
-                  'https://kartinkof.club/uploads/posts/2023-05/1683641438_kartinkof-club-p-pustoi-chelovek-kartinki-3.png',
-                  width: 300,
-                  height: 200,
-                ),
-              )
-            ],
+          const TextField(
+            decoration:
+                InputDecoration(labelText: 'ФИО', border: OutlineInputBorder()),
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          const TextField(
+            decoration: InputDecoration(
+                labelText: 'Номер телефона', border: OutlineInputBorder()),
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          const TextField(
+            obscureText: true,
+            decoration: InputDecoration(
+                labelText: 'Пароль', border: OutlineInputBorder()),
+          ),
+          const SizedBox(
+            height: 10,
           ),
         ],
       ),
