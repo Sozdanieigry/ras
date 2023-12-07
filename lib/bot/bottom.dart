@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_schedule/register/register.dart';
 import 'package:flutter_schedule/register/sign.dart';
 
 class bot extends StatelessWidget {
