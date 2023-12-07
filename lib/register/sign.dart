@@ -39,27 +39,63 @@ class person extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          const TextField(
-            decoration:
-                InputDecoration(labelText: 'ФИО', border: OutlineInputBorder()),
+          // ignore: sized_box_for_whitespace
+          Container(
+            width: 400,
+            height: 50,
+            child: const TextField(
+              decoration: InputDecoration(
+                  labelText: 'ФИО', border: OutlineInputBorder()),
+            ),
           ),
           const SizedBox(
             height: 15,
           ),
-          const TextField(
-            decoration: InputDecoration(
-                labelText: 'Номер телефона', border: OutlineInputBorder()),
+          // ignore: avoid_unnecessary_containers
+          Container(
+            width: 400,
+            height: 50,
+            child: const TextField(
+              decoration: InputDecoration(
+                  labelText: 'Номер телефона', border: OutlineInputBorder()),
+            ),
           ),
           const SizedBox(
             height: 15,
           ),
-          const TextField(
-            obscureText: true,
-            decoration: InputDecoration(
-                labelText: 'Пароль', border: OutlineInputBorder()),
+          // ignore: avoid_unnecessary_containers, sized_box_for_whitespace
+          Container(
+            width: 400,
+            height: 50,
+            child: const TextField(
+              obscureText: true,
+              decoration: InputDecoration(
+                  labelText: 'Пароль', border: OutlineInputBorder()),
+            ),
           ),
           const SizedBox(
             height: 10,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Flexible(
+                flex: 1,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.lightBlue,
+                      fixedSize: const Size(200, 60)),
+                  child: const Text(
+                    'Войти',
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+              )
+            ],
           ),
         ],
       ),
